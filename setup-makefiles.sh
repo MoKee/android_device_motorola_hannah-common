@@ -11,9 +11,9 @@ set -e
 MY_DIR="${BASH_SOURCE%/*}"
 if [[ ! -d "${MY_DIR}" ]]; then MY_DIR="${PWD}"; fi
 
-LINEAGE_ROOT="${MY_DIR}/../../.."
+MOKEE_ROOT="${MY_DIR}/../../.."
 
-HELPER="${LINEAGE_ROOT}/vendor/lineage/build/tools/extract_utils.sh"
+HELPER="${MOKEE_ROOT}/vendor/mokee/build/tools/extract_utils.sh"
 if [ ! -f "${HELPER}" ]; then
     echo "Unable to find helper script at ${HELPER}"
     exit 1
@@ -22,7 +22,7 @@ source "${HELPER}"
 
 # Initialize the helper for common
 INITIAL_COPYRIGHT_YEAR="$DEVICE_BRINGUP_YEAR"
-setup_vendor "${DEVICE_COMMON}" "${VENDOR}" "${LINEAGE_ROOT}" true
+setup_vendor "${DEVICE_COMMON}" "${VENDOR}" "${MOKEE_ROOT}" true
 
 # Copyright headers and guards
 write_headers "ahannah hannah rhannah"
