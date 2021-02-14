@@ -1,5 +1,5 @@
 ### All blobs from this list, unless pinned and noted as otherwise,
-##  are from hannah 8.1.0 OCP27.91-150-8
+##  are from hannah 8.0.0 OCP27.91-150-8
 
 # ADSP modules
 vendor/lib/rfsa/adsp/tas2560_TI.bin
